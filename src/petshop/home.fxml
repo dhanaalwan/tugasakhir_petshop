@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="533.0" prefWidth="936.0" style="-fx-background-color: #f7f970;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="petshop.HomeController">
+   <children>
+      <Pane layoutX="556.0" layoutY="8.0" prefHeight="518.0" prefWidth="372.0" style="-fx-background-color: #87e5bc;">
+         <children>
+            <Label layoutX="120.0" layoutY="28.0" text="Data Pemesan">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="104.0" text="Nama">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="141.0" text="Alamat Pengiriman">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="182.0" text="Tanggal Pesan">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="221.0" text="Tanggal Kirim ">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="namap" layoutX="186.0" layoutY="99.0" />
+            <JFXTextField fx:id="alamatp" layoutX="186.0" layoutY="136.0" />
+            <JFXTextField fx:id="tglp" layoutX="186.0" layoutY="177.0" />
+            <JFXButton fx:id="btnkirim" layoutX="99.0" layoutY="428.0" onAction="#kirim" style="-fx-background-color: #f7f970;" text="Kirim" />
+            <Label layoutX="36.0" layoutY="368.0" text="Total Bayar">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="total" layoutX="188.0" layoutY="363.0" />
+            <JFXTextArea fx:id="TA1" layoutX="187.0" layoutY="259.0" maxWidth="149.0" minWidth="149.0" prefHeight="90.0" prefWidth="149.0" />
+            <Label layoutX="37.0" layoutY="259.0" text="Barang">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="total1" layoutX="187.0" layoutY="216.0" />
+            <JFXButton fx:id="btnhapus" layoutX="163.0" layoutY="428.0" onAction="#hapus" style="-fx-background-color: #f7f970;" text="Hapus" />
+            <JFXButton fx:id="btnkeluar" layoutX="232.0" layoutY="428.0" onAction="#keluar" style="-fx-background-color: #f7f970;" text="Keluar" />
+         </children></Pane>
+      <Pane layoutX="8.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="534.0" style="-fx-background-color: #ff5e8e;">
+         <children>
+            <ScrollPane hmax="100.0" hvalue="100.0" layoutX="15.0" layoutY="41.0" prefHeight="209.0" prefWidth="505.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1863.0" prefWidth="490.0">
+                     <children>
+                        <Pane prefHeight="120.0" prefWidth="490.0" style="-fx-background-color: #d9e8f7;">
+                           <children>
+                              <Label fx:id="barang1" layoutX="323.0" layoutY="23.0" prefHeight="17.0" prefWidth="95.0" text="WHISKAS" />
+                              <Label layoutX="323.0" layoutY="40.0" prefHeight="17.0" prefWidth="111.0" text="Price : Rp. 50.000,-" />
+                              <JFXRadioButton fx:id="addsatu" layoutX="318.0" layoutY="62.0" text="Add" />
+                              <ImageView fitHeight="114.0" fitWidth="147.0" layoutX="33.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../gambar/whiskas.jpg" />
+                                 </image>
+                              </ImageView>
+                              <JFXTextField fx:id="jumlah1" layoutX="362.0" layoutY="79.0" maxWidth="61.0" minWidth="48.0" prefHeight="31.0" prefWidth="61.0" />
+                              <Label layoutX="323.0" layoutY="86.0" text="Jumlah" />
+                           </children>
+                        </Pane>
+                        <Pane layoutY="139.0" prefHeight="120.0" prefWidth="490.0" style="-fx-background-color: #d9e8f7;">
+                           <children>
+                              <Label fx:id="barang2" layoutX="320.0" layoutY="24.0" prefHeight="17.0" prefWidth="95.0" text="FELIBITE" />
+                              <Label layoutX="320.0" layoutY="41.0" prefHeight="17.0" prefWidth="111.0" text="Price : Rp. 50.000,-" />
+                              <JFXRadioButton fx:id="adddua" layoutX="315.0" layoutY="61.0" text="Add" />
+                              <ImageView fitHeight="117.0" fitWidth="150.0" layoutX="34.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../gambar/felibite.jpg" />
+                                 </image>
+                              </ImageView>
+                              <JFXTextField fx:id="jumlah2" layoutX="357.0" layoutY="78.0" maxWidth="61.0" minWidth="48.0" prefHeight="31.0" prefWidth="61.0" />
+                              <Label layoutX="318.0" layoutY="85.0" text="Jumlah" />
+                           </children>
+                        </Pane>
+                        <Pane layoutY="423.0" prefHeight="120.0" prefWidth="490.0" style="-fx-background-color: #d9e8f7;">
+                           <children>
+                              <Label fx:id="barang4" layoutX="320.0" layoutY="25.0" prefHeight="17.0" prefWidth="95.0" text="ME-O" />
+                              <Label layoutX="320.0" layoutY="42.0" prefHeight="17.0" prefWidth="111.0" text="Price : Rp. 50.000,-" />
+                              <JFXRadioButton fx:id="addempat" layoutX="315.0" layoutY="64.0" text="Add" />
+                              <ImageView fitHeight="104.0" fitWidth="147.0" layoutX="32.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../gambar/meo.jpg" />
+                                 </image>
+                              </ImageView>
+                              <JFXTextField fx:id="jumlah4" layoutX="357.0" layoutY="84.0" maxWidth="61.0" minWidth="48.0" prefHeight="31.0" prefWidth="61.0" />
+                              <Label layoutX="318.0" layoutY="91.0" text="Jumlah" />
+                           </children>
+                        </Pane>
+                        <Pane layoutY="281.0" prefHeight="120.0" prefWidth="490.0" style="-fx-background-color: #d9e8f7;">
+                           <children>
+                              <Label layoutX="320.0" layoutY="42.0" prefHeight="17.0" prefWidth="111.0" text="Price : Rp. 50.000,-" />
+                              <JFXRadioButton fx:id="addtiga" layoutX="315.0" layoutY="63.0" text="Add" />
+                              <ImageView fitHeight="163.0" fitWidth="105.0" layoutX="42.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../gambar/cutiez%20catz.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="barang3" layoutX="320.0" layoutY="25.0" prefHeight="17.0" prefWidth="95.0" text="CUTIEZ CATZ" />
+                              <JFXTextField fx:id="jumlah3" layoutX="357.0" layoutY="80.0" maxWidth="61.0" minWidth="48.0" prefHeight="31.0" prefWidth="61.0" />
+                              <Label layoutX="318.0" layoutY="87.0" text="Jumlah" />
+                           </children>
+                        </Pane>
+                        <Pane layoutY="570.0" prefHeight="120.0" prefWidth="490.0" style="-fx-background-color: #d9e8f7;">
+                           <children>
+                              <Label fx:id="barang5" layoutX="320.0" layoutY="29.0" prefHeight="17.0" prefWidth="95.0" text="ANGGORA ABU" />
+                              <Label layoutX="320.0" layoutY="46.0" prefHeight="17.0" prefWidth="111.0" text="Price : Rp. 200.000,-" />
+                              <JFXRadioButton fx:id="addlima" layoutX="315.0" layoutY="68.0" text="Add" />
+                              <ImageView fitHeight="114.0" fitWidth="147.0" layoutX="33.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../gambar/kucing%20persia%20abu2.jpg" />
+                                 </image>
+                              </ImageView>
+                              <JFXTextField fx:id="jumlah5" layoutX="357.0" layoutY="86.0" maxWidth="61.0" minWidth="48.0" prefHeight="31.0" prefWidth="61.0" />
+                              <Label layoutX="318.0" layoutY="93.0" text="Jumlah" />
+                           </children>
+                        </Pane>
+                        <Pane layoutY="996.0" prefHeight="120.0" prefWidth="490.0" style="-fx-background-color: #d9e8f7;">
+                           <children>
+                              <Label fx:id="barang8" layoutX="320.0" layoutY="25.0" prefHeight="17.0" prefWidth="138.0" text="CATSAN PASIR KUCING" />
+                              <Label layoutX="320.0" layoutY="42.0" prefHeight="17.0" prefWidth="111.0" text="Price : Rp. 50.000,-" />
+                              <JFXRadioButton fx:id="adddelapan" layoutX="315.0" layoutY="64.0" text="Add" />
+                              <ImageView fitHeight="104.0" fitWidth="147.0" layoutX="60.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../gambar/pasir%20kucing%20catsan.JPG" />
+                                 </image>
+                              </ImageView>
+                              <JFXTextField fx:id="jumlah8" layoutX="357.0" layoutY="83.0" maxWidth="61.0" minWidth="48.0" prefHeight="31.0" prefWidth="61.0" />
+                              <Label layoutX="318.0" layoutY="90.0" text="Jumlah" />
+                           </children>
+                        </Pane>
+                        <Pane layoutY="854.0" prefHeight="120.0" prefWidth="490.0" style="-fx-background-color: #d9e8f7;">
+                           <children>
+                              <Label layoutX="317.0" layoutY="34.0" prefHeight="17.0" prefWidth="111.0" text="Price : Rp. 200.000,-" />
+                              <JFXRadioButton fx:id="addtujuh" layoutX="312.0" layoutY="60.0" text="Add" />
+                              <ImageView fitHeight="86.0" fitWidth="143.0" layoutX="32.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../gambar/kucing.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="barang7" layoutX="317.0" layoutY="17.0" prefHeight="17.0" prefWidth="139.0" text="ANAK KUCING KEMBAR" />
+                              <JFXTextField fx:id="jumlah7" layoutX="357.0" layoutY="81.0" maxWidth="61.0" minWidth="48.0" prefHeight="31.0" prefWidth="61.0" />
+                              <Label layoutX="318.0" layoutY="88.0" text="Jumlah" />
+                           </children>
+                        </Pane>
+                        <Pane layoutY="712.0" prefHeight="120.0" prefWidth="490.0" style="-fx-background-color: #d9e8f7;">
+                           <children>
+                              <Label fx:id="barang6" layoutX="317.0" layoutY="25.0" prefHeight="17.0" prefWidth="95.0" text="KUCING PUTIH" />
+                              <Label layoutX="317.0" layoutY="42.0" prefHeight="17.0" prefWidth="111.0" text="Price : Rp. 200.000,-" />
+                              <JFXRadioButton fx:id="addenam" layoutX="312.0" layoutY="62.0" text="Add" />
+                              <ImageView fitHeight="117.0" fitWidth="150.0" layoutX="34.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../gambar/kucing%20anggora.jpg" />
+                                 </image>
+                              </ImageView>
+                              <JFXTextField fx:id="jumlah6" layoutX="357.0" layoutY="79.0" maxWidth="61.0" minWidth="48.0" prefHeight="31.0" prefWidth="61.0" />
+                              <Label layoutX="318.0" layoutY="86.0" text="Jumlah" />
+                           </children>
+                        </Pane>
+                        <Pane layoutY="1281.0" prefHeight="120.0" prefWidth="490.0" style="-fx-background-color: #d9e8f7;">
+                           <children>
+                              <Label fx:id="barang10" layoutX="320.0" layoutY="25.0" prefHeight="17.0" prefWidth="95.0" text="SEROKAN PASIR" />
+                              <Label layoutX="320.0" layoutY="42.0" prefHeight="17.0" prefWidth="111.0" text="Price : Rp. 50.000,-" />
+                              <JFXRadioButton fx:id="addsepuluh" layoutX="315.0" layoutY="64.0" text="Add" />
+                              <ImageView fitHeight="104.0" fitWidth="147.0" layoutX="60.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../gambar/serokan%20pasir%20biasa.jpg" />
+                                 </image>
+                              </ImageView>
+                              <JFXTextField fx:id="jumlah10" layoutX="357.0" layoutY="81.0" maxWidth="61.0" minWidth="48.0" prefHeight="31.0" prefWidth="61.0" />
+                              <Label layoutX="318.0" layoutY="88.0" text="Jumlah" />
+                           </children>
+                        </Pane>
+                        <Pane layoutY="1139.0" prefHeight="120.0" prefWidth="490.0" style="-fx-background-color: #d9e8f7;">
+                           <children>
+                              <Label layoutX="319.0" layoutY="39.0" prefHeight="17.0" prefWidth="111.0" text="Price : Rp. 50.000,-" />
+                              <JFXRadioButton fx:id="addsembilan" layoutX="314.0" layoutY="65.0" text="Add" />
+                              <ImageView fitHeight="117.0" fitWidth="86.0" layoutX="57.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../gambar/pasir%20kucing%20cat%20litter.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="barang9" layoutX="319.0" layoutY="22.0" prefHeight="17.0" prefWidth="126.0" text="IMUT PASIR KUCING" />
+                              <JFXTextField fx:id="jumlah9" layoutX="359.0" layoutY="82.0" maxWidth="61.0" minWidth="48.0" prefHeight="31.0" prefWidth="61.0" />
+                              <Label layoutX="320.0" layoutY="89.0" text="Jumlah" />
+                           </children>
+                        </Pane>
+                        <Pane layoutY="1424.0" prefHeight="120.0" prefWidth="490.0" style="-fx-background-color: #d9e8f7;">
+                           <children>
+                              <Label fx:id="barang11" layoutX="320.0" layoutY="25.0" prefHeight="17.0" prefWidth="126.0" text="SEROKAN PASIR MOTIF" />
+                              <Label layoutX="320.0" layoutY="42.0" prefHeight="17.0" prefWidth="111.0" text="Price : Rp. 50.000,-" />
+                              <JFXRadioButton fx:id="addsebelas" layoutX="315.0" layoutY="64.0" text="Add" />
+                              <ImageView fitHeight="104.0" fitWidth="147.0" layoutX="60.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../gambar/serokan%20pasir.jpg" />
+                                 </image>
+                              </ImageView>
+                              <JFXTextField fx:id="jumlah11" layoutX="357.0" layoutY="81.0" maxWidth="61.0" minWidth="48.0" prefHeight="31.0" prefWidth="61.0" />
+                              <Label layoutX="318.0" layoutY="88.0" text="Jumlah" />
+                           </children>
+                        </Pane>
+                        <Pane layoutY="1709.0" prefHeight="120.0" prefWidth="490.0" style="-fx-background-color: #d9e8f7;">
+                           <children>
+                              <Label fx:id="barang13" layoutX="320.0" layoutY="25.0" prefHeight="17.0" prefWidth="126.0" text="KANDANG 2 LANTAI" />
+                              <Label layoutX="320.0" layoutY="42.0" prefHeight="17.0" prefWidth="111.0" text="Price : Rp. 50.000,-" />
+                              <JFXRadioButton fx:id="addtigabelas" layoutX="315.0" layoutY="64.0" text="Add" />
+                              <ImageView fitHeight="115.0" fitWidth="86.0" layoutX="81.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../gambar/kandang%20kucing%20tingkat.jpg" />
+                                 </image>
+                              </ImageView>
+                              <JFXTextField fx:id="jumlah13" layoutX="358.0" layoutY="80.0" maxWidth="61.0" minWidth="48.0" prefHeight="31.0" prefWidth="61.0" />
+                              <Label layoutX="319.0" layoutY="87.0" text="Jumlah" />
+                           </children>
+                        </Pane>
+                        <Pane layoutY="1567.0" prefHeight="120.0" prefWidth="490.0" style="-fx-background-color: #d9e8f7;">
+                           <children>
+                              <Label layoutX="320.0" layoutY="42.0" prefHeight="17.0" prefWidth="111.0" text="Price : Rp. 50.000,-" />
+                              <JFXRadioButton fx:id="addduabelas" layoutX="315.0" layoutY="68.0" text="Add" />
+                              <ImageView fitHeight="115.0" fitWidth="154.0" layoutX="53.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../gambar/kandang%20kucing.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="barang12" layoutX="320.0" layoutY="25.0" prefHeight="17.0" prefWidth="95.0" text="KANDANG BIASA" />
+                              <JFXTextField fx:id="jumlah12" layoutX="357.0" layoutY="85.0" maxWidth="61.0" minWidth="48.0" prefHeight="31.0" prefWidth="61.0" />
+                              <Label layoutX="318.0" layoutY="92.0" text="Jumlah" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <JFXButton fx:id="list" layoutX="480.0" layoutY="255.0" onAction="#listbtn" style="-fx-background-color: #f7f970;" text="LIST" />
+            <JFXTextArea fx:id="TA" layoutX="130.0" layoutY="295.0" maxWidth="343.0" minWidth="343.0" prefWidth="343.0" />
+            <JFXButton fx:id="btnproses" layoutX="477.0" layoutY="370.0" onAction="#proses" style="-fx-background-color: #f7f970;" text="Proses" />
+            <Label layoutX="30.0" layoutY="14.0" text="Silahkan Pilih Barang">
+               <font>
+                  <Font name="DFPOP1-W9" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
